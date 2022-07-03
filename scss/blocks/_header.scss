@@ -1,0 +1,148 @@
+.header {
+   
+   background-color: #fff;
+   
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 36px 0;
+   }
+   
+   &__logo {
+   }
+   
+   &__logo-img {
+   }
+   
+   &__nav {
+   }
+   
+   &__list {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+   }
+   
+   &__item {
+   }
+   
+   &__item-link {
+      font-size: 19px;
+      line-height: 30px;
+      letter-spacing: 0.4px;
+      color: #292F36;
+      text-decoration: none;  
+      
+      &:hover {
+         color: #CDA274;
+      }
+      
+      &:active {
+         color: #cda274c0;
+      }
+   }
+   
+   &__item-link--active {
+      color: #CDA274;
+   }
+   
+   &__burger {
+      border: none;
+      outline: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      display: none;
+   }
+   
+   &__burger-menu {
+   }
+   
+   &__burger-close {
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 760px) {
+   body {
+      padding-top: 106px;
+   }
+
+   .header {
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      
+      &__inner-container {
+         position: relative;
+         padding: 0 24px;
+      }
+      
+      &__container {
+      }
+      
+      &__container--active {
+         .header__nav {
+            transform: translate(0);
+         }
+         
+         .header__burger-menu {
+            display: none;
+         }
+         
+         .header__burger-close {
+            display: inline-block;
+         }
+      }
+      
+      &__logo {
+      }
+      
+      &__logo-img {
+      }
+      
+      &__nav {
+         width: 255px;
+         height: calc(100vh - 100%);
+         transform: translateX(-100%);
+         transition: all 0.3s ease;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         padding: 0 24px;
+         background-color: rgba(255, 239, 210, 0.737);
+      }
+      
+      &__list {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 30px;
+      }
+      
+      &__item {
+      }
+      
+      &__item-link {
+         font-size: 24px;
+         font-weight: 700;
+      }
+      
+      &__item-link--active {
+         color: #ffbb73;
+      }
+      
+      &__burger {
+         display: block;
+      }
+      
+      &__burger-menu {
+      }
+      
+      &__burger-close {
+      }
+   }
+}

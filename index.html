@@ -5,13 +5,46 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/main.css">
-   <title>Template</title>
+   <title>Interno</title>
 </head>
 <body>
+   <h1 class="visually-hidden">Interno</h1>
    <header class="header">
-      <div class="container">
-         <div class="header__container">
-   
+      <div class="container header__inner-container">
+         <div class="header__container header__container--active">
+            <a class="header__logo" href="#">
+               <img class="header__logo-img" src="./images/header-logo.svg" alt="company logo image" width="177" height="50">
+            </a>
+            
+            <nav class="header__nav">
+               <ul class="header__list">
+                  <li class="header__item">
+                     <a class="header__item-link header__item-link--active" href="#">Home</a>
+                  </li>
+                  
+                  <li class="header__item">
+                     <a class="header__item-link" href="#">About Us</a>
+                  </li>
+                  
+                  <li class="header__item">
+                     <a class="header__item-link" href="#">Services</a>
+                  </li>
+                  
+                  <li class="header__item">
+                     <a class="header__item-link" href="#">Pages</a>
+                  </li>
+                  
+                  <li class="header__item">
+                     <a class="header__item-link" href="#">Contact Us</a>
+                  </li>
+               </ul>
+            </nav>
+            
+            <button class="header__burger">
+               <img class="header__burger-menu" src="./images/header-burger.svg" alt="burger menu" width="20" height="16">
+               
+               <img class="header__burger-close" src="./images/close.svg" alt="burger close" width="18" height="18">
+            </button>
          </div>
       </div>
    </header>
@@ -20,7 +53,15 @@
       <section class="hero">
          <div class="container">
             <div class="hero__container">
-   
+               <div class="hero__text-wrapper">
+                  <h2 class="hero__heading">Let's Create Your Dream Interior</h2>
+                  <p class="hero__text">
+                     The world needs innovators and problem solvers who turn challenges into greater opportunities.
+                  </p>
+                  <a class="hero__btn" href="#">Get Started
+                     <img class="hero__btn-arrow" src="./images/arrow-right.png" alt="Arrow right" width="30" height="40">
+                  </a>
+               </div>
             </div>
          </div>
       </section>
@@ -33,5 +74,8 @@
          </div>
       </div>
    </footer>
+
+
+   <script src="./main.js"></script>
 </body>
 </html>
